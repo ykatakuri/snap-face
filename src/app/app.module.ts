@@ -7,16 +7,20 @@ import { AppComponent } from './app.component';
 import { FaceSnapComponent } from './components/face-snap/face-snap.component';
 import { FaceSnapListComponent } from './components/face-snap-list/face-snap-list.component';
 import { HeaderComponent } from './components/header/header.component';
+import { AppRoutingModule } from './app-routing.module';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FaceSnapComponent,
     FaceSnapListComponent,
-    HeaderComponent
+    HeaderComponent,
+    LandingPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'fr-FR' }
