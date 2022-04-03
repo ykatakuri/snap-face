@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { SingleFaceSnapComponent } from './components/single-face-snap/single-face-snap.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SingleFaceSnapComponent } from './components/single-face-snap/single-fa
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'fr-FR' }
