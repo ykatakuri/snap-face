@@ -1,11 +1,16 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  private token = 'MyFakeToken';
+  token!: string;
+
+  login(): void {
+    this.token = "MyToken";
+  }
   
   getToken(): string {
     return this.token;
