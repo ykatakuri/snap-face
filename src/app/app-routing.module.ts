@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FaceSnapListComponent } from './components/face-snap-list/face-snap-list.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import { NewFaceSnapComponent } from './components/new-face-snap/new-face-snap.component';
-import { SingleFaceSnapComponent } from './components/single-face-snap/single-face-snap.component';
+import { FaceSnapListComponent } from './face-snaps/components/face-snap-list/face-snap-list.component';
+import { NewFaceSnapComponent } from './face-snaps/components/new-face-snap/new-face-snap.component';
+import { SingleFaceSnapComponent } from './face-snaps/components/single-face-snap/single-face-snap.component';
 
 const routes: Routes = [
     { path: "facesnaps/:id", component: SingleFaceSnapComponent },
